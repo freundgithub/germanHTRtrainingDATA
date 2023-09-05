@@ -5,13 +5,12 @@ Handwriting text recognition (HTR) as a deep learning task requires images of ha
 but not a specific German database with all German characters (like Ä, ä, Ö, ö, Ü, ü and ß). 
 For example: In an application to recognise handwritten answers to open-ended questions in paper and pencil questionnaires (PAPI) from German respondents, a [HTR software](https://github.com/githubharald/SimpleHTR/blob/master/README.md) can't recognise German-specific characters without special training. Multiple results are possible.
 
-![false-recog-overview](https://github.com/freundgithub/germanHTRtrainingDATA/assets/144004963/ef42db1c-c1a9-424c-9346-21307e11e14c)
+![false-recog-overview](https://github.com/freundgithub/germanHTRtrainingDATA/assets/144004963/501481d9-9b39-4d65-9fc3-47fea61ac6c4)
 
 
 Therefore, for my master's thesis, I collected a small sample of 3,349 handwritten images from 288 writers from a set of 650 different German professional terms to correctly recognise German-specific characters. 
 
-![correct-recog-orview](https://github.com/freundgithub/germanHTRtrainingDATA/assets/144004963/c2d899b2-83ba-4cd0-9e51-ebdc4a54b272)
-
+![correct-recog-orview](https://github.com/freundgithub/germanHTRtrainingDATA/assets/144004963/aa5021e2-76c3-4cfc-b16f-798e2568dde9)
 
 
 
