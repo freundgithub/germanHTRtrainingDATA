@@ -1,14 +1,14 @@
 # germanHTRtrainingDATA
 **German version below.
 
-Handwritten Text Recognition (HTR) as a task of deep learning needs images of handwritten samples from different writers. Of course, there are many open source projects with training data for HTR tasks in different languages (like [IAM](https://fki.tic.heia-fr.ch/databases/iam-handwriting-database), [CVL](https://cvl.tuwien.ac.at/research/cvl-databases/an-off-line-database-for-writer-retrieval-writer-identification-and-word-spotting/) etc.), 
-but not a specific german database with all german specific characters (like Ä, ä, Ö, ö, Ü, ü and ß). 
-For example: In a scope of application of recognizing handwritten answers from open-ended-questions in paper and pencil questionnaires (PAPI) from german respondents a [HTR-software](https://github.com/githubharald/SimpleHTR/blob/master/README.md) can't recognize german specific characters without specific training. Multiple outcomes are possible.
+Handwriting text recognition (HTR) as a deep learning task requires images of handwriting samples from different writers. Of course, there are many open source projects with training data for HTR tasks in different languages (like [IAM](https://fki.tic.heia-fr.ch/databases/iam-handwriting-database), [CVL](https://cvl.tuwien.ac.at/research/cvl-databases/an-off-line-database-for-writer-retrieval-writer-identification-and-word-spotting/) etc.), 
+but not a specific German database with all German characters (like Ä, ä, Ö, ö, Ü, ü and ß). 
+For example: In an application to recognise handwritten answers to open-ended questions in paper and pencil questionnaires (PAPI) from German respondents, a [HTR software](https://github.com/githubharald/SimpleHTR/blob/master/README.md) can't recognise German-specific characters without special training. Multiple results are possible.
 
 ![false-recog-overview](https://github.com/freundgithub/germanHTRtrainingDATA/assets/144004963/ef42db1c-c1a9-424c-9346-21307e11e14c)
 
 
-Therefore, due my master thesis i collected a small sample of 3,349 handwritten images from 288 writers from an amount of 650 different german terms of occupations to recognize german specific characters correctly. 
+Therefore, for my master's thesis, I collected a small sample of 3,349 handwritten images from 288 writers from a set of 650 different German professional terms to correctly recognise German-specific characters. 
 
 ![correct-recog-orview](https://github.com/freundgithub/germanHTRtrainingDATA/assets/144004963/c2d899b2-83ba-4cd0-9e51-ebdc4a54b272)
 
@@ -18,7 +18,7 @@ Therefore, due my master thesis i collected a small sample of 3,349 handwritten 
 
 # Available trainingsdata and pretrained models:
 
-Because, more training data is even better, in my master thesis i put the databases [kaggle](https://www.kaggle.com/datasets/vaibhao/handwritten-characters), [IAM](https://fki.tic.heia-fr.ch/databases/iam-handwriting-database), [CVL](https://cvl.tuwien.ac.at/research/cvl-databases/an-off-line-database-for-writer-retrieval-writer-identification-and-word-spotting/), [MNIST](http://yann.lecun.com/exdb/mnist/) together to slightly increase the recognition rate. The best pre-trained models are available in "line-mode" (CER = 13,16%; WER = 20,17%) and "word-mode" (CER = 12,37%; WER = 71,36%). Are OCR predestianted images (like kaagle or MNIST) used for training, the errorates increases, but the empirical errorrates decreases.
+Since more training data is even better, in my master thesis I combined the databases [kaggle](https://www.kaggle.com/datasets/vaibhao/handwritten-characters), [IAM](https://fki.tic.heia-fr.ch/databases/iam-handwriting-database), [CVL](https://cvl.tuwien.ac.at/research/cvl-databases/an-off-line-database-for-writer-retrieval-writer-identification-and-word-spotting/), [MNIST](http://yann.lecun.com/exdb/mnist/) to slightly increase the recognition rate. The best pre-trained models are available in "line mode" (CER = 13.16%; WER = 20.17%) and "word mode" (CER = 12.37%; WER = 71.36%). When OCR predestined images (such as Kaagle or MNIST) are used for training, the error rates increase, but the empirical error rates decrease.
 
 + [Pretrained model for single words images (word-mode)](https://drive.google.com/file/d/1xjkbVVRFC6yLFxsMP-9bhWJnOjVN7eZ0/view?usp=drive_link)
 
@@ -29,7 +29,7 @@ Because, more training data is even better, in my master thesis i put the databa
 
 ### Format of Data: 
 
-For an easy implemantation with the pupular IAM database, the terms of german occupational data is prepared like the IAM database in form of ordner structer and ground thruth text file. The metadata of the positional arguments of the bounding box, the word transcription and the grammatical tag are placeholders and doesn't represent the real value.
+For easy implementation with the popular IAM database, the terms of the German occupational data are prepared like the IAM database in the form of an ordner structer and a ground thruth text file. The metadata of the positional arguments of the bounding box, the word transcription and the grammatical tag are placeholders and don't represent the real value.
 
 ## Future work
 
