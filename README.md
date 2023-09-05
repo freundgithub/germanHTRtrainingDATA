@@ -16,7 +16,7 @@ Therefore, for my master's thesis, I collected a small sample of 3,349 handwritt
 
 
 
-# Available trainingsdata and pretrained models:
+# Available training data and pre-trained models:
 
 Since more training data is even better, in my master thesis I combined the databases [kaggle](https://www.kaggle.com/datasets/vaibhao/handwritten-characters), [IAM](https://fki.tic.heia-fr.ch/databases/iam-handwriting-database), [CVL](https://cvl.tuwien.ac.at/research/cvl-databases/an-off-line-database-for-writer-retrieval-writer-identification-and-word-spotting/), [MNIST](http://yann.lecun.com/exdb/mnist/) and the featured handwritten images of German occupational terms to slightly increase the recognition rate. The best pre-trained models are available in "line mode" (CER = 13.16%; WER = 20.17%) and "word mode" (CER = 12.37%; WER = 71.36%). When OCR predestined images (such as Kaagle or MNIST) are used for training, the error rates increase, but the empirical error rates decrease.
 
@@ -59,6 +59,6 @@ Da aus einem Mehr an Trainingsdaten, bessere Ergebnisse erzielt werden können, 
 + [Trainingsdaten der Berufsbezeichnungen](https://drive.google.com/file/d/1kfe0HKE5MY3UFjCdn6iF3H8EXeXJw-ki/view?usp=drive_link)
 
 
-### Format der Daten: 
+### Datenformat: 
 
 Die Trainingsdaten sind im Format der IAM-Datenbank erstellt, sodass sie sich einfach in diese Trainingsdaten integrieren lassen. Die Metadaten zur Transkription, Bounding-Box Position usw. sind als Platzhalter eingefügt und entsprechen nicht den tatsächlichen Werten.
